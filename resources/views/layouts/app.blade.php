@@ -31,7 +31,7 @@
             @yield('content')
         </main>
     </div>
-        @yield('map')
+    @yield('map')
     @yield('scripts')
 </body>
 </html>

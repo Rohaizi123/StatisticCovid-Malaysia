@@ -37,6 +37,8 @@ class HomeController extends Controller
             'query' => ['lastUpdatedAtApify']
         ])->getBody();
 
+        // $all_country = $client->request('GET', 'https://api.covid19api.com/country/south-africa/status/confirmed/live?from=2020-03-01T00:00:00Z&to=2021-01-01T00:00:00Z')->getBody();
+        
         $positive_cases = json_decode($data_positive);
 
         $current_data = json_decode($data);
