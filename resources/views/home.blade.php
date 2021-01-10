@@ -81,7 +81,7 @@
             </div>
             <div class="date mt-1 ml-2" style="color: #9197B0;">
                 <h6>Last Update On</h6>
-                <small>{{ $current_data->lastUpdatedAtSource}}</small>
+                <small>{{ date('d-m-Y', strtotime($current_data->lastUpdatedAtSource)) }}</small>
             </div>
         </div>
     </div>
